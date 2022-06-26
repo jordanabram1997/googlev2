@@ -7,7 +7,6 @@ import {useRouter} from 'next/router';
 import {useRef} from 'react';
 
 
-
 export default function Home() {
   const router = useRouter();
   const searchInputRef = useRef(null)
@@ -15,7 +14,7 @@ export default function Home() {
     event.preventDefault();
     const term = searchInputRef.current.value;
     if(!term.trim()) return
-    router.push(`/search?term=${term.trim()}`)
+    router.push(`/search?term=${term.trim()}&searchType=`);
   }
 
   return (
@@ -49,7 +48,6 @@ export default function Home() {
           <button className='btn'>{`I'm Feeling Lucky`}</button>
         </div>
       </form>
-      
       {/* Footer */}
       <Footer/>
     </div>
