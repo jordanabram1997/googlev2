@@ -2,7 +2,7 @@ import Head from "next/head";
 import SearchHeader from "../components/SearchHeader";
 import SearchResults from "../components/SearchResults";
 import Response from "../Response";
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import ImageResults from "../components/ImageResults";
 
 export default function search({results}) {
