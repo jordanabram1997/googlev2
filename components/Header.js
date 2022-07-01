@@ -10,7 +10,7 @@ export default function Header() {
           <Link href="https://about.google/">
             <a className="link">About</a>
           </Link>
-          <Link href="https://store.google/">
+          <Link href="https://store.google.com/">
             <a className="link">Store</a>
           </Link>   
         </div>
@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="https://mail.google.com">
             <a className="link">Gmail</a>
           </Link>
-            <a onClick={()=>router.push(`/search?term=${router.query.term || "google"}&searchType=image"`)} className="link">Images</a>
+            <a onClick={()=>router.push(`/search?term=${router.query.searchType|| "google"}&searchType=image"`)} className="link">Images</a>
             <User />
         </div>
     </header>
